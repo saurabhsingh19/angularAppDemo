@@ -3,6 +3,7 @@ export interface User{
     firstName: string,
     lastName: string,
     age: number
-    address:Address
+    address?:Address
+    image?:string
     
 }

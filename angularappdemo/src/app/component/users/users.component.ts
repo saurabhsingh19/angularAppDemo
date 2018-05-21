@@ -8,6 +8,7 @@ import {User} from '../../models/User';
 })
 export class UsersComponent implements OnInit {
   users: User[]
+  enableAdd :boolean = true
   constructor() { }
 
   ngOnInit() {
@@ -20,7 +21,8 @@ export class UsersComponent implements OnInit {
            street : '50 Girl At the door',
            city : 'Boston',
            state : 'MA'
-        }
+        },
+        image:"http://lorempixel.com/600/600/people/3"
       },
       {
         firstName :'Mexwall',
@@ -30,7 +32,8 @@ export class UsersComponent implements OnInit {
            street : '50 Girl At the door',
            city : 'Boston',
            state : 'MA'
-        }
+        },
+        image:"http://lorempixel.com/600/600/people/2"
       }
     ];
     this.addUSer({
@@ -41,7 +44,8 @@ export class UsersComponent implements OnInit {
          street : '50 Girl At the door',
          city : 'Boston',
          state : 'MA'
-      }
+      },
+      image:"http://lorempixel.com/600/600/people/1"
     })
   }
   addUSer(user:User){
